@@ -1,13 +1,102 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbearia Exemplo</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <h1>Olá, Mundo!</h1>
-    <hr>
-    <p>Meu primeiro site em repositório</p>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Barbearia Exemplo</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <button class="nav-toggle">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Bem-vindo à Barbearia Exemplo</h2>
+      <p>O melhor corte e estilo para você.</p>
+      <a href="#contato" class="btn">Agende Agora</a>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="sobre container">
+    <h2>Sobre Nós</h2>
+    <p>A Barbearia Exemplo tem tradição e estilo para atender você com excelência.</p>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="servicos container">
+    <h2>Serviços</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Corte de Cabelo</h3>
+        <p>R$ 50</p>
+      </div>
+      <div class="card">
+        <h3>Barba</h3>
+        <p>R$ 30</p>
+      </div>
+      <div class="card">
+        <h3>Navalha</h3>
+        <p>R$ 40</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section id="galeria" class="galeria container">
+    <h2>Galeria</h2>
+    <div class="grid">
+      <!-- Insira imagens aqui -->
+      <div class="grid-item"><img src="img/MAO_3520.JPG" alt=""></div>
+      <div class="grid-item"><img src="img/MAO_3544.JPG" alt=""></div>
+      <div class="grid-item"><img src="img/MAO_3559.JPG" alt=""></div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contato container">
+    <h2>Contato</h2>
+    <p>Endereço: Rua Exemplo, 123</p>
+    <p>Telefone: (11) 99999-9999</p>
+    <a href="https://wa.me/5511999999999" class="btn-wpp">WhatsApp</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Barbearia Exemplo. Todos os direitos reservados.</p>
+      <div class="social">
+        <!-- Links redes sociais -->
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle menu mobile
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav ul');
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
 </body>
 </html>
